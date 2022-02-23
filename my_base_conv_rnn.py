@@ -18,7 +18,8 @@
 import my_backend
 from keras.engine import base_layer
 from keras.engine.input_spec import InputSpec
-from keras.layers.rnn.base_rnn import RNN
+#from keras.layers.rnn.base_rnn import RNN  # TODO: compatible with stable keras
+from keras.layers import RNN
 from keras.utils import conv_utils
 from keras.utils import generic_utils
 from keras.utils import tf_utils
