@@ -4796,6 +4796,10 @@ Returns:
 
   if not time_major:
     outputs = tf.nest.map_structure(swap_batch_timestep, outputs)
+    
+  print(outputs)
+  print(last_output)
+  print(tf.expand_dims(last_output, 0))
 
   return last_output, outputs, new_states
 
