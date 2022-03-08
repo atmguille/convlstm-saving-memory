@@ -4799,7 +4799,7 @@ Returns:
     
   print(outputs)
   print(last_output)
-  print(tf.expand_dims(last_output, 0))
+  print(tf.expand_dims(last_output, 0 if time_major else 1))
 
   return last_output, outputs, new_states
 
